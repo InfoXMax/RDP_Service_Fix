@@ -34,6 +34,17 @@ To apply the fix, follow these steps:
 
 After applying the fix, try restarting your computer and check if the Remote Desktop Service starts correctly. You should be able to establish remote desktop connections to your Windows Server.
 
+
+## Registry Keys
+
+The script modifies the following registry keys:
+
+- HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService\Parameters
+- ServiceDll: %SystemRoot%\System32\termsrv.dll
+
+These keys are crucial for the proper functioning of the Remote Desktop Service.
+
+
 If you encounter any issues with the fix or have suggestions for improvements, feel free to [open an issue](https://github.com/InfoXMax/RDP_Service_Fix/issues). 
 
 
